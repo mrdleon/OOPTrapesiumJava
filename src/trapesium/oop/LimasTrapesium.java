@@ -2,10 +2,10 @@ package trapesium.oop;
 
 public class LimasTrapesium extends Trapesium {
 
-    private double vTinggiLimas;
+    private double vTinggiLimas; 
 
-    public LimasTrapesium(Perhitungan vPht) {
-        super(vPht);
+    public LimasTrapesium(Perhitungan vPht) { 
+        super(vPht); // refrence langsung ke parent (Trapesium)
     }
 
     public double getTinggiLimas() {

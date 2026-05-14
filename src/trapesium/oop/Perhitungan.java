@@ -143,7 +143,7 @@ public class Perhitungan {
 
         vGiliran = Giliran.LIMAS;
 
-        notifyAll();
+        notifyAll(); // Membangunkan/mengabarkan thread lain.
     }
 
     public synchronized void jalankanPerhitunganLimas(int vIndex) {
@@ -294,3 +294,4 @@ public class Perhitungan {
         return vRand.nextDouble() * 100;
     }
 }
+

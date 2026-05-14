@@ -1,7 +1,7 @@
 package trapesium.oop;
 
 public class Trapesium extends BangunDatar
-        implements LuasCalculatable, KelilingCalculatable, Runnable {
+        implements Runnable {
 
     protected Perhitungan vPht;
 
@@ -112,13 +112,13 @@ public class Trapesium extends BangunDatar
         return "Trapesium Sembarang";
     }
 
-    // OVERLOADING METHOD
+    // OVERLOADING METHOD 
     public void tampilkanInfo() {
 
         System.out.println("Jenis = " + tentukanJenisTrapesium());
     }
 
-    // OVERLOADING METHOD
+    // OVERLOADING METHOD (Nama sama tetapi parameter berbeda)
     public void tampilkanInfo(String vJudul) {
 
         System.out.println(vJudul);

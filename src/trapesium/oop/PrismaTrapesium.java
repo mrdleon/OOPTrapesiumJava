@@ -5,7 +5,7 @@ public class PrismaTrapesium extends Trapesium {
     private double vTinggiPrisma;
 
     public PrismaTrapesium(Perhitungan vPht) {
-        super(vPht);
+        super(vPht); // refrence langsung ke parent (Trapesium)
     }
 
     public double getTinggiPrisma() {
