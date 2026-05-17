@@ -11,7 +11,7 @@ public class Trapesium extends BangunDatar
     private double vSisiMiringKanan;
     private double vTinggi;
 
-    public Trapesium(Perhitungan vPht) {
+    public Trapesium(Perhitungan vPht) { // Reference ke OBJECT perhitungan
         this.vPht = vPht;
     }
 

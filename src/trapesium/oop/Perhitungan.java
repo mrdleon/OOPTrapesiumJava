@@ -1,6 +1,6 @@
 package trapesium.oop;
 
-import java.util.Random;
+import java.util.Random; // Library(kelas) bawaan Java. deret angka pseudo-random (acak semu)
 
 public class Perhitungan {
 
@@ -8,7 +8,7 @@ public class Perhitungan {
     private LimasTrapesium vLimas;
     private PrismaTrapesium vPrisma;
 
-    private final Random vRand = new Random();
+    private final Random vRand = new Random(); // final: nilainya tidak dapat diganti lagi
 
     // TOTAL DATA BESAR UNTUK MULTITHREADING
     private static final int V_TOTAL_DATA = 100000;
@@ -291,7 +291,13 @@ public class Perhitungan {
     // RANDOM DOUBLE 0 - 100
     private double bangkitkanRandom() {
 
-        return vRand.nextDouble() * 100;
+        return vRand.nextDouble() * 100; // contoh vRand.nextDouble menghasilkan 0.73, maka 0.73 * 100 = 73.0
     }
 }
 
+// generate random data
+// menyimpan object bangun
+// mengatur giliran thread
+// sinkronisasi multithreading
+// menjalankan simulasi perhitungan
+// menghubungkan semua class.
